@@ -11,8 +11,10 @@ RUN bundle install
 
 COPY . /app
 
-RUN bundle exec rake assets:precompile
+RUN bundle install
 
 EXPOSE 3000
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
+
+COPY . .
