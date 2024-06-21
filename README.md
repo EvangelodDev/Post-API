@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API para la creación, obtención, edición y borrado de Posts. Se utiliza Ruby on Rails separando la implementación en Modelo, Vista y Controlador. Se tiene la regla de que tanto el nombre como el contenido no pueden ser nulos. Se utiliza Jbuilder para mostrar la información como JSON.
 
-Things you may want to cover:
+Consideraciones: No es necesario en una instancia no publicada la necesidad de usuarios, pero si la seguridad es un tema a considerar para deployar este proyecto, es imporante configurar CORS para que no tome todas las direcciones y solo considere la aplicación, ademas de hacer un sistema de usuarios con Device y Tokens JWT.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para ejecutar:
+* Ir a la ruta principal del proyecto (donde se encuentra dockerfile).
+* Ejecutar "docker-compose up --build".
+* Esperar a que aparezca el mensaje "Use Ctrl+C to stop", después de mostrar el puerto.
+* Considerar que la primera query toma un poco más de tiempo al iniciar desde 0 el servidor.
