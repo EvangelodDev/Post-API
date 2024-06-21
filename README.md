@@ -9,3 +9,4 @@ Para ejecutar:
 * Ejecutar "docker-compose up --build".
 * Esperar a que aparezca el mensaje "Use Ctrl+C to stop", después de mostrar el puerto.
 * Considerar que la primera query toma un poco más de tiempo al iniciar desde 0 el servidor.
+* El puerto abierto para este servicio es el 3000. Se optimiza la estructura para no necesitar un .env, pero en el futuro, por seguridad, lo correcto es usar uno.
